@@ -5,5 +5,12 @@ import { FaasdCdkDemoStack } from '../lib/faasd-cdk-demo-stack';
 
 const app = new cdk.App();
 new FaasdCdkDemoStack(app, 'faasd-cdk-demo-stack', {
-
+  env: {
+    account: 'AWS_ACCOUNT',
+    region: 'AWS_REGION'
+  },
+  baseDomainName: 'BASE_DOMAIN_NAME',
+  fullDomainName: 'FULL_DOMAIN_NAME',
+  emailAddress: 'EMAIL_ADDRESS',
+  vpcId: 'VPC_ID',
 });
