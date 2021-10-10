@@ -1,6 +1,7 @@
 {
   "name": "faasd-cdk-demo",
   "version": "0.1.0",
+  "license": "MIT",
   "bin": {
     "faasd-cdk-demo": "bin/faasd-cdk-demo.js"
   },

@@ -1,10 +1,8 @@
-# faasd CDK demo
+# faasd CDK Demo
 
-![NPN version](https://img.shields.io/npm/v/@strongishllama/faasd-cdk-demo)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/strongishllama/faasd-cdk-demo/main/LICENSE)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/strongishllama/faasd-cdk-demo/Release)
 
-This is a demo project for the faasd-cdk [NPM package](https://www.npmjs.com/package/@strongishllama/faasd-cdk).
+This is a demo project for the [@strongishllama/faasd-cdk](https://www.npmjs.com/package/@strongishllama/faasd-cdk) NPM package.
 
 ## Prerequisites.
 
@@ -46,4 +44,4 @@ Once the stack is deployed you will see 3 outputs on your terminal.
 * Your username to login.
 * The URL of the SecretsManager secret where your generated password is stored.
 
-Fetch the password from SecretsManager and the follow the faasd URL to login.
+Fetch the password from SecretsManager and the follow the faasd URL to login. You may have to wait a few minutes for the user data script to finish running.
