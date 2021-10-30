@@ -13,4 +13,5 @@ new FaasdCdkDemoStack(app, 'faasd-cdk-demo-stack', {
   fullDomainName: 'FULL_DOMAIN_NAME',
   emailAddress: 'EMAIL_ADDRESS',
   vpcId: 'VPC_ID',
+  amiId: 'AMI_ID'
 });

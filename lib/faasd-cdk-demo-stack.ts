@@ -7,6 +7,7 @@ export interface FaasdCdkDemoStackProps extends cdk.StackProps {
   readonly fullDomainName?: string;
   readonly emailAddress: string;
   readonly vpcId: string;
+  readonly amiId: string;
 }
 
 export class FaasdCdkDemoStack extends cdk.Stack {
@@ -18,14 +19,14 @@ export class FaasdCdkDemoStack extends cdk.Stack {
     }
 
     new faasd.Instance(this, 'faasd-instance', {
-      account: props.env.account,
       region: props.env.region,
       baseDomainName: props.baseDomainName,
       fullDomainName: props.fullDomainName,
       emailAddress: props.emailAddress,
       vpc: ec2.Vpc.fromLookup(this, 'vpc', {
         vpcId: props.vpcId
-      })
+      }),
+      amiId: props.amiId
     });
   }
 }

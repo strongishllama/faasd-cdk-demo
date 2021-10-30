@@ -33,6 +33,7 @@ Replace the placeholder properties in the ```bin/faasd-cdk.demo.ts``` file.
 * **FULL_DOMAIN_NAME**: The full domain name where faasd will be hosted. Leave undefined if you wish to use the base domain name.
 * **EMAIL_ADDRESS**: The email address LetsEncrypt will use.
 * **VPC_ID**: The ID of the VPC that the EC2 instance will be deployed into.
+* **AMI_ID**: The ID of the AMI that the EC2 instance will use when deployed.
 
 Deploy the stack.
 ```
